@@ -1,0 +1,305 @@
+2025-06-10 18:25:56 : INFO : log initialised
+2025-06-10 18:25:56 : INFO : ====== WebDriver manager ======
+2025-06-10 18:25:57 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-10 18:25:57 : DEBUG : Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-06-10 18:25:58 : DEBUG : https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 11507
+2025-06-10 18:25:58 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-10 18:25:58 : DEBUG : Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-06-10 18:25:58 : DEBUG : https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 11507
+2025-06-10 18:25:58 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.68\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-10 18:25:58 : DEBUG : Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.68\chromedriver-win32/chromedriver.exe
+2025-06-10 18:25:58 : DEBUG : Started executable: `C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.68\chromedriver-win32/chromedriver.exe` in a child process with pid: 11500 using 0 to output -3
+2025-06-10 18:25:58 : DEBUG : POST http://localhost:50247/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2025-06-10 18:25:58 : DEBUG : Starting new HTTP connection (1): localhost:50247
+2025-06-10 18:25:59 : DEBUG : http://localhost:50247 "POST /session HTTP/1.1" 200 0
+2025-06-10 18:25:59 : DEBUG : Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"137.0.7151.69","chrome":{"chromedriverVersion":"137.0.7151.68 (2989ffee9373ea8b8623bd98b3cb350a8e95cadc-refs/branch-heads/7151@{#1873})","userDataDir":"C:\\Users\\THEJESH\\AppData\\Local\\Temp\\scoped_dir11500_1425434336"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:50250"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"08902fb63d58e88b8fa53166f4f6e3f0"}} | headers=HTTPHeaderDict({'Content-Length': '884', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:25:59 : DEBUG : Finished Request
+2025-06-10 18:25:59 : INFO : *** test_001_AccountRegistration started ***
+2025-06-10 18:25:59 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/url {'url': 'https://automationexercise.com/'}
+2025-06-10 18:26:06 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/url HTTP/1.1" 200 0
+2025-06-10 18:26:06 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:06 : DEBUG : Finished Request
+2025-06-10 18:26:06 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/window/maximize {}
+2025-06-10 18:26:06 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/window/maximize HTTP/1.1" 200 0
+2025-06-10 18:26:06 : DEBUG : Remote response: status=200 | data={"value":{"height":583,"width":1111,"x":-7,"y":-7}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:06 : DEBUG : Finished Request
+2025-06-10 18:26:06 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'xpath', 'value': "//a[normalize-space()='Signup / Login']"}
+2025-06-10 18:26:06 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:06 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.F0C4A9239B9EB9972EBD071449971764.e.6"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:06 : DEBUG : Finished Request
+2025-06-10 18:26:06 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.F0C4A9239B9EB9972EBD071449971764.e.6/click {}
+2025-06-10 18:26:08 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.F0C4A9239B9EB9972EBD071449971764.e.6/click HTTP/1.1" 200 0
+2025-06-10 18:26:08 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:08 : DEBUG : Finished Request
+2025-06-10 18:26:08 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'css selector', 'value': '[name="name"]'}
+2025-06-10 18:26:08 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:08 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.484DC1A647477D41B0BC9BCC9E79BC18.e.46"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:08 : DEBUG : Finished Request
+2025-06-10 18:26:08 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.484DC1A647477D41B0BC9BCC9E79BC18.e.46/value {'text': 'thejesh', 'value': ['t', 'h', 'e', 'j', 'e', 's', 'h']}
+2025-06-10 18:26:08 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.484DC1A647477D41B0BC9BCC9E79BC18.e.46/value HTTP/1.1" 200 0
+2025-06-10 18:26:08 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:08 : DEBUG : Finished Request
+2025-06-10 18:26:08 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'xpath', 'value': "//input[@data-qa='signup-email']"}
+2025-06-10 18:26:08 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:08 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.484DC1A647477D41B0BC9BCC9E79BC18.e.47"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:08 : DEBUG : Finished Request
+2025-06-10 18:26:08 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.484DC1A647477D41B0BC9BCC9E79BC18.e.47/value {'text': '25eG7@gmail.com', 'value': ['2', '5', 'e', 'G', '7', '@', 'g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm']}
+2025-06-10 18:26:08 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.484DC1A647477D41B0BC9BCC9E79BC18.e.47/value HTTP/1.1" 200 0
+2025-06-10 18:26:08 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:08 : DEBUG : Finished Request
+2025-06-10 18:26:08 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'xpath', 'value': "//button[normalize-space()='Signup']"}
+2025-06-10 18:26:08 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:08 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.484DC1A647477D41B0BC9BCC9E79BC18.e.54"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:08 : DEBUG : Finished Request
+2025-06-10 18:26:08 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.484DC1A647477D41B0BC9BCC9E79BC18.e.54/click {}
+2025-06-10 18:26:09 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.484DC1A647477D41B0BC9BCC9E79BC18.e.54/click HTTP/1.1" 200 0
+2025-06-10 18:26:09 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:09 : DEBUG : Finished Request
+2025-06-10 18:26:09 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/timeouts {'implicit': 10000}
+2025-06-10 18:26:09 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/timeouts HTTP/1.1" 200 0
+2025-06-10 18:26:09 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:09 : DEBUG : Finished Request
+2025-06-10 18:26:09 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/timeouts {'implicit': 10000}
+2025-06-10 18:26:09 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/timeouts HTTP/1.1" 200 0
+2025-06-10 18:26:09 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:09 : DEBUG : Finished Request
+2025-06-10 18:26:09 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'css selector', 'value': '[id="password"]'}
+2025-06-10 18:26:09 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:09 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.71"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:09 : DEBUG : Finished Request
+2025-06-10 18:26:09 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.71/value {'text': 'wpUZH', 'value': ['w', 'p', 'U', 'Z', 'H']}
+2025-06-10 18:26:09 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.71/value HTTP/1.1" 200 0
+2025-06-10 18:26:09 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:09 : DEBUG : Finished Request
+2025-06-10 18:26:09 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/timeouts {'implicit': 10000}
+2025-06-10 18:26:09 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/timeouts HTTP/1.1" 200 0
+2025-06-10 18:26:09 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:09 : DEBUG : Finished Request
+2025-06-10 18:26:09 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'css selector', 'value': '[id="first_name"]'}
+2025-06-10 18:26:09 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:09 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.77"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:09 : DEBUG : Finished Request
+2025-06-10 18:26:09 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.77/value {'text': '6q4tb', 'value': ['6', 'q', '4', 't', 'b']}
+2025-06-10 18:26:09 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.77/value HTTP/1.1" 200 0
+2025-06-10 18:26:09 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:09 : DEBUG : Finished Request
+2025-06-10 18:26:09 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'css selector', 'value': '[id="last_name"]'}
+2025-06-10 18:26:09 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:09 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.78"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:09 : DEBUG : Finished Request
+2025-06-10 18:26:09 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.78/value {'text': 'bXvja', 'value': ['b', 'X', 'v', 'j', 'a']}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.78/value HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'css selector', 'value': '[id="address1"]'}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.80"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.80/value {'text': 'bangalore', 'value': ['b', 'a', 'n', 'g', 'a', 'l', 'o', 'r', 'e']}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.80/value HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'css selector', 'value': '[id="state"]'}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.83"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.83/value {'text': 'karnataka', 'value': ['k', 'a', 'r', 'n', 'a', 't', 'a', 'k', 'a']}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.83/value HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'css selector', 'value': '[id="city"]'}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.84"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.84/value {'text': 'bangalore', 'value': ['b', 'a', 'n', 'g', 'a', 'l', 'o', 'r', 'e']}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.84/value HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'css selector', 'value': '[id="zipcode"]'}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.85"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.85/value {'text': '777777', 'value': ['7', '7', '7', '7', '7', '7']}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.85/value HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'css selector', 'value': '[id="mobile_number"]'}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.86"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.86/value {'text': 'Frxh9', 'value': ['F', 'r', 'x', 'h', '9']}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.86/value HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'xpath', 'value': "//button[contains(text(),'Create Account')]"}
+2025-06-10 18:26:10 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:10 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.94"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:10 : DEBUG : Finished Request
+2025-06-10 18:26:10 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.94/click {}
+2025-06-10 18:26:13 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.76F122731F9445239CCCE365DF292FDB.e.94/click HTTP/1.1" 200 0
+2025-06-10 18:26:13 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:13 : DEBUG : Finished Request
+2025-06-10 18:26:13 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'xpath', 'value': '/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/p[1]'}
+2025-06-10 18:26:13 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:13 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.185C5F4D07822E896EF03492CA3FEC96.e.117"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:13 : DEBUG : Finished Request
+2025-06-10 18:26:13 : DEBUG : GET http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.185C5F4D07822E896EF03492CA3FEC96.e.117/text {}
+2025-06-10 18:26:13 : DEBUG : http://localhost:50247 "GET /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.185C5F4D07822E896EF03492CA3FEC96.e.117/text HTTP/1.1" 200 0
+2025-06-10 18:26:13 : DEBUG : Remote response: status=200 | data={"value":"Congratulations! Your new account has been successfully created!"} | headers=HTTPHeaderDict({'Content-Length': '76', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:13 : DEBUG : Finished Request
+2025-06-10 18:26:13 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element {'using': 'xpath', 'value': "//a[normalize-space()='Continue']"}
+2025-06-10 18:26:13 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element HTTP/1.1" 200 0
+2025-06-10 18:26:13 : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.E6273C42837D6D4FE054C968B47ED319.d.185C5F4D07822E896EF03492CA3FEC96.e.118"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:13 : DEBUG : Finished Request
+2025-06-10 18:26:13 : DEBUG : POST http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.185C5F4D07822E896EF03492CA3FEC96.e.118/click {}
+2025-06-10 18:26:16 : DEBUG : http://localhost:50247 "POST /session/08902fb63d58e88b8fa53166f4f6e3f0/element/f.E6273C42837D6D4FE054C968B47ED319.d.185C5F4D07822E896EF03492CA3FEC96.e.118/click HTTP/1.1" 200 0
+2025-06-10 18:26:16 : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:16 : DEBUG : Finished Request
+2025-06-10 18:26:16 : DEBUG : DELETE http://localhost:50247/session/08902fb63d58e88b8fa53166f4f6e3f0/window {}
+2025-06-10 18:26:16 : DEBUG : http://localhost:50247 "DELETE /session/08902fb63d58e88b8fa53166f4f6e3f0/window HTTP/1.1" 200 0
+2025-06-10 18:26:16 : DEBUG : Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-06-10 18:26:16 : DEBUG : Finished Request
+2025-06-10 18:26:16 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-10 19:44:46 : INFO : log initialised
+2025-06-10 19:44:46 : INFO : ====== WebDriver manager ======
+2025-06-10 19:44:48 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-10 19:44:49 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-10 19:44:49 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.68\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-10 19:44:50 : INFO : *** test_001_AccountRegistration started ***
+2025-06-10 19:45:08 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 12:36:58 : INFO : log initialised
+2025-06-12 12:36:58 : INFO : ====== WebDriver manager ======
+2025-06-12 12:36:59 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 12:36:59 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 12:37:00 : INFO : There is no [win64] chromedriver "137.0.7151.70" for browser google-chrome "137.0.7151" in cache
+2025-06-12 12:37:00 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 12:37:00 : INFO : WebDriver version 137.0.7151.70 selected
+2025-06-12 12:37:00 : INFO : Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.70/win32/chromedriver-win32.zip
+2025-06-12 12:37:00 : INFO : About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.70/win32/chromedriver-win32.zip
+2025-06-12 12:37:00 : INFO : Driver downloading response is 200
+2025-06-12 12:37:01 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 12:37:03 : INFO : Driver has been saved in cache [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.70]
+2025-06-12 12:37:05 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 12:37:23 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 12:37:36 : INFO : log initialised
+2025-06-12 12:37:36 : INFO : ====== WebDriver manager ======
+2025-06-12 12:37:41 : INFO : Get LATEST geckodriver version for 139.0 firefox
+2025-06-12 12:37:42 : INFO : Get LATEST geckodriver version for 139.0 firefox
+2025-06-12 12:37:42 : INFO : There is no [win64] geckodriver "v0.36.0" for browser firefox "139.0" in cache
+2025-06-12 12:37:42 : INFO : Get LATEST geckodriver version for 139.0 firefox
+2025-06-12 12:37:42 : INFO : Getting latest mozilla release info for v0.36.0
+2025-06-12 12:37:43 : INFO : About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+2025-06-12 12:37:45 : INFO : Driver downloading response is 200
+2025-06-12 12:37:45 : INFO : Get LATEST geckodriver version for 139.0 firefox
+2025-06-12 12:37:45 : INFO : Driver has been saved in cache [C:\Users\THEJESH\.wdm\drivers\geckodriver\win64\v0.36.0]
+2025-06-12 12:37:52 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 12:38:07 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 12:38:17 : INFO : log initialised
+2025-06-12 12:38:17 : INFO : ====== WebDriver manager ======
+2025-06-12 12:38:20 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 12:38:20 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 12:38:20 : INFO : There is no [win64] edgedriver "137.0.3296.68" for browser edge "137.0.3296" in cache
+2025-06-12 12:38:20 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 12:38:21 : INFO : About to download new driver from https://msedgedriver.azureedge.net/137.0.3296.68/edgedriver_win64.zip
+2025-06-12 12:38:21 : INFO : Driver downloading response is 200
+2025-06-12 12:38:22 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 12:38:24 : INFO : Driver has been saved in cache [C:\Users\THEJESH\.wdm\drivers\edgedriver\win64\137.0.3296.68]
+2025-06-12 12:38:25 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 12:39:45 : INFO : log initialised
+2025-06-12 12:39:45 : INFO : ====== WebDriver manager ======
+2025-06-12 12:39:48 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 12:39:48 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 12:39:49 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\edgedriver\win64\137.0.3296.68\msedgedriver.exe] found in cache
+2025-06-12 12:39:50 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 12:40:07 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 20:59:06 : INFO : log initialised
+2025-06-12 20:59:06 : INFO : ====== WebDriver manager ======
+2025-06-12 20:59:16 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 20:59:17 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 20:59:17 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\edgedriver\win64\137.0.3296.68\msedgedriver.exe] found in cache
+2025-06-12 20:59:19 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 20:59:52 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 21:17:50 : INFO : log initialised
+2025-06-12 21:30:58 : INFO : log initialised
+2025-06-12 21:30:58 : INFO : ====== WebDriver manager ======
+2025-06-12 21:31:02 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:31:03 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:31:03 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-12 21:31:06 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 21:31:19 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 21:48:33 : INFO : log initialised
+2025-06-12 21:48:33 : INFO : ====== WebDriver manager ======
+2025-06-12 21:48:37 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:48:37 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:48:37 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-12 21:48:39 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 21:49:25 : INFO : log initialised
+2025-06-12 21:49:25 : INFO : ====== WebDriver manager ======
+2025-06-12 21:49:28 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:49:29 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:49:29 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-12 21:49:30 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 21:50:23 : INFO : log initialised
+2025-06-12 21:50:23 : INFO : ====== WebDriver manager ======
+2025-06-12 21:50:27 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:50:27 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:50:27 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-12 21:50:29 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 21:50:42 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 21:54:20 : INFO : log initialised
+2025-06-12 21:54:20 : INFO : ====== WebDriver manager ======
+2025-06-12 21:54:25 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:54:25 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:54:25 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-12 21:54:27 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 21:54:42 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 21:56:22 : INFO : log initialised
+2025-06-12 21:56:22 : INFO : ====== WebDriver manager ======
+2025-06-12 21:56:26 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:56:26 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:56:26 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-12 21:56:28 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 21:57:57 : INFO : log initialised
+2025-06-12 21:57:57 : INFO : ====== WebDriver manager ======
+2025-06-12 21:58:00 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:58:01 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:58:01 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-12 21:58:02 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 21:58:43 : INFO : log initialised
+2025-06-12 21:58:43 : INFO : ====== WebDriver manager ======
+2025-06-12 21:58:47 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:58:47 : INFO : Get LATEST chromedriver version for google-chrome
+2025-06-12 21:58:48 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-12 21:58:49 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 21:59:25 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 22:00:33 : INFO : log initialised
+2025-06-12 22:00:33 : INFO : ====== WebDriver manager ======
+2025-06-12 22:00:41 : INFO : Get LATEST geckodriver version for 139.0 firefox
+2025-06-12 22:00:42 : INFO : Get LATEST geckodriver version for 139.0 firefox
+2025-06-12 22:00:42 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-06-12 22:00:50 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 22:01:57 : INFO : log initialised
+2025-06-12 22:01:57 : INFO : ====== WebDriver manager ======
+2025-06-12 22:02:04 : INFO : Get LATEST geckodriver version for 139.0 firefox
+2025-06-12 22:02:05 : INFO : Get LATEST geckodriver version for 139.0 firefox
+2025-06-12 22:02:05 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-06-12 22:02:12 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 22:02:28 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-12 22:03:56 : INFO : log initialised
+2025-06-12 22:03:56 : INFO : ====== WebDriver manager ======
+2025-06-12 22:04:04 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 22:04:04 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-12 22:04:04 : INFO : Driver [C:\Users\THEJESH\.wdm\drivers\edgedriver\win64\137.0.3296.68\msedgedriver.exe] found in cache
+2025-06-12 22:04:06 : INFO : *** test_001_AccountRegistration started ***
+2025-06-12 22:04:25 : INFO : *** test_001_AccountRegistration completed ***
+2025-06-13 15:23:32 : INFO : log initialised
+2025-06-13 15:23:32 : INFO : ====== WebDriver manager ======
+2025-06-13 15:23:42 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-13 15:23:42 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-13 15:23:42 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-13 15:23:43 : INFO : About to download new driver from https://msedgedriver.azureedge.net/137.0.3296.68/edgedriver_win64.zip
+2025-06-13 15:23:43 : INFO : Driver downloading response is 200
+2025-06-13 15:23:48 : INFO : Get LATEST edgedriver version for Edge 137.0.3296
+2025-06-13 15:23:49 : INFO : Driver has been saved in cache [C:\Users\THEJESH\.wdm\drivers\edgedriver\win64\137.0.3296.68]
+2025-06-13 15:23:51 : INFO : *** test_001_AccountRegistration started ***
+2025-06-13 15:24:04 : INFO : *** test_001_AccountRegistration completed ***
