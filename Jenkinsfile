@@ -14,13 +14,21 @@ pipeline {
 
         stage('🐍 Setup Python Environment') {
             steps {
-                bat 'python -m venv venv && call venv\\Scripts\\activate && pip install --upgrade pip && pip install -r requirements.txt'
+                bat '''
+                python -m venv venv
+                call venv\\Scripts\\activate
+                venv\\Scripts\\python.exe -m pip install --upgrade pip
+                pip install -r requirements.txt
+                '''
             }
         }
 
         stage('✅ Run Pytest Automation Scripts') {
             steps {
-                bat 'call venv\\Scripts\\activate && pytest testcases/ --maxfail=1 --disable-warnings -s -v --capture=tee-sys --html=reports/%BUILD_TIMESTAMP%.html'
+                bat '''
+                call venv\\Scripts\\activate
+                pytest testcases/ --maxfail=1 --disable-warnings -s -v --capture=tee-sys --html=reports/%BUILD_TIMESTAMP%.html
+                '''
             }
         }
     }
